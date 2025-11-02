@@ -1,0 +1,21 @@
+camera:
+  device_id: 0
+  width: 640
+  height: 480
+  fps: 30
+
+mediapipe:
+  static_image_mode: false
+  max_num_hands: 1
+  min_detection_confidence: 0.7
+  min_tracking_confidence: 0.5
+  model_complexity: 1
+
+classifier:
+  model_type: "random_forest"
+  n_estimators: 100
+  min_confidence: 0.75
+
+paths:
+  data_dir: "data"
+  models_dir: "data/models"
